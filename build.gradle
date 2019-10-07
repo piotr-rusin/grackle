@@ -9,8 +9,16 @@ repositories {
     mavenCentral()
 }
 
+test { useJUnitPlatform() }
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    testImplementation 'com.willowtreeapps.assertk:assertk-jvm:0.20'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.5.2"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:5.5.2"
+
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.5.2"
 }
 
 compileKotlin {
