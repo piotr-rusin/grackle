@@ -1,3 +1,4 @@
+
 enum class TokenType {
     NUMBER,
     STRING,
@@ -9,3 +10,5 @@ enum class TokenType {
     ALTERNATIVE_DELIMITER,
     END
 }
+
+class Token(val value: String, val tokenType: TokenType)
