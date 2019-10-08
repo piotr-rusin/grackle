@@ -11,4 +11,6 @@ enum class TokenType {
     END
 }
 
+class TokenizationException(message: String?) : Exception(message)
+
 class Token(val value: String, val tokenType: TokenType)
