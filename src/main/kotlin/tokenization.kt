@@ -13,4 +13,8 @@ enum class TokenType {
 
 class TokenizationException(message: String?) : Exception(message)
 
-class Token(val value: String, val tokenType: TokenType)
+class Token(val value: String, val tokenType: TokenType) {
+    override fun toString(): String {
+        return "Token(value='$value', tokenType=$tokenType)"
+    }
+}
